@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Provider | Abhijith Krishna</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="custom-provider-page">
+      <div class="case-study-shell">
+        <div class="case-study-hero">
+          <div class="case-study-hero-text">
+            <h1 class="case-study-title">Custom Provider</h1>
+            <p class="case-study-description">
+              An GUI extensibility workflow that lets Cloud Ops teams onboard any Cloud Provider and any
+              Workload (DB/storage/network) beyond Nutanix's native Provider and workload support.
+            </p>
+            <div class="case-study-my-role">
+              <div class="my-role-label">MY ROLE</div>
+              <p class="my-role-text">
+                Owned end-to-end UX for Custom Provider GUI Builder— UX strategy → flows → interaction model
+                → UI → validation → handoff.
+              </p>
+            </div>
+          </div>
+          <div class="case-study-hero-media">
+            <img
+              src="assets/custom-provider/macbook-mockup.svg"
+              alt="Custom Provider interface mockup"
+              class="hero-image"
+            />
+          </div>
+        </div>
+
+        <hr class="case-study-divider" />
+
+        <div class="case-study-grid">
+          <aside class="case-study-left" aria-hidden="true">
+            <div class="case-study-labels">
+              <div class="case-study-label-group">
+                <div class="case-study-label">CONTEXT</div>
+                <div class="case-study-sub-label">Nutanix</div>
+                <div class="case-study-sub-label">Self Service</div>
+                <div class="case-study-sub-label">The Gap</div>
+                <div class="case-study-sub-label">Problems and Goals</div>
+              </div>
+              <div class="case-study-label-group">
+                <div class="case-study-label">THE SOLUTION</div>
+                <div class="case-study-sub-label">Custom Provider</div>
+                <div class="case-study-sub-label">My Role</div>
+                <div class="case-study-sub-label">Impact</div>
+              </div>
+              <div class="case-study-label-group">
+                <div class="case-study-label">DESIGN</div>
+                <div class="case-study-sub-label">UX Problems</div>
+              </div>
+              <div class="case-study-label-group">
+                <div class="case-study-label">GLOSSARY</div>
+              </div>
+            </div>
+          </aside>
+
+          <main class="case-study-main">
+            <div class="case-study-content">
+              <section class="case-study-section" id="context" aria-labelledby="context-label">
+                <h2 id="context-label" class="case-study-section-title">Context</h2>
+                <div class="subsections-grid">
+                  <section class="case-study-subsection" id="nutanix" aria-labelledby="nutanix-label">
+                    <h3 id="nutanix-label" class="case-study-subsection-title">NUTANIX</h3>
+                    <p>
+                      Nutanix builds cloud infrastructure software for enterprises running hybrid and
+                      multi-cloud environments.
+                    </p>
+                  </section>
+
+                  <section
+                    class="case-study-subsection"
+                    id="self-service"
+                    aria-labelledby="self-service-label"
+                  >
+                    <h3 id="self-service-label" class="case-study-subsection-title">SELF SERVICE</h3>
+                    <p>
+                      Within Nutanix Cloud Manager (NCM), Self Service is a tool that helps Cloud Ops and IT
+                      Admins to orchestrate and automate tasks like setting up servers, managing application
+                      lifecycles end-to-end, and running cloud services.
+                    </p>
+                  </section>
+
+                  <section class="case-study-subsection" id="the-gap" aria-labelledby="the-gap-label">
+                    <h3 id="the-gap-label" class="case-study-subsection-title">THE GAP</h3>
+                    <div>
+                      <p>
+                        Nutanix natively supports 5 Providers and allows you to manage only compute
+                        resources.
+                      </p>
+                      <img
+                        src="assets/custom-provider/sticky-notes.svg"
+                        alt="Sticky notes showing VM options and cloud providers"
+                        class="section-image"
+                      />
+                    </div>
+                  </section>
+
+                  <section
+                    class="case-study-subsection"
+                    id="business-problem"
+                    aria-labelledby="business-problem-label"
+                  >
+                    <h3 id="business-problem-label" class="case-study-subsection-title">BUSINESS PROBLEM</h3>
+                    <p>
+                      Today's enterprise customers have multi-cloud + hybrid setups, niche clouds like Alibaba
+                      and more workload types (databases, storage files, networks) than Nutanix's native
+                      integrations could cover.
+                    </p>
+                    <div id="business-goal" class="goal-banner">
+                      <div class="goal-banner-title">BUSINESS GOAL</div>
+                      <p>
+                        Equip the product with robust capabilities that can help customers quickly onboard new
+                        cloud platforms and manage the workloads on top of it.
+                      </p>
+                    </div>
+                  </section>
+
+                  <section class="case-study-subsection" id="user-problem" aria-labelledby="user-problem-label">
+                    <h3 id="user-problem-label" class="case-study-subsection-title">USER PROBLEM</h3>
+                    <p>
+                      Native providers didn't cover key workloads(database, network, storage). Native support
+                      was only for compute resources. Users used eScripts and APIs as hacky solutions, which
+                      generally worked for Day-0; but these failed for Day-2 management and operations because
+                      the platform lacked resource semantics.
+                    </p>
+                    <div id="user-goal" class="goal-banner">
+                      <div class="goal-banner-title">USER GOAL</div>
+                      <ul>
+                        <li>Be able to connect to the hybrid could accounts of their choice.</li>
+                        <li>
+                          Use Self Service's automation and orchestration capabilities to manage end-to-end
+                          lifecycle of their database, storage, and other resource workloads.
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
+                <div class="problem-rotator">
+                  <img
+                    src="assets/custom-provider/ProblemA.png"
+                    alt="Problems and Goals illustration (state A)"
+                    class="problem-frame problem-frame-a"
+                  />
+                  <img
+                    src="assets/custom-provider/ProblemB.png"
+                    alt="Problems and Goals illustration (state B)"
+                    class="problem-frame problem-frame-b"
+                  />
+                </div>
+              </section>
+
+              <section class="case-study-section" id="the-solution" aria-labelledby="the-solution-label">
+                <h2 id="the-solution-label" class="case-study-section-title">The Solution</h2>
+                <div class="subsections-grid">
+                  <section
+                    class="case-study-subsection"
+                    id="custom-provider"
+                    aria-labelledby="custom-provider-label"
+                  >
+                    <h3 id="custom-provider-label" class="case-study-subsection-title">CUSTOM PROVIDER</h3>
+                    <p>
+                      Custom Provider is a way for Cloud Ops teams to extend Nutanix Self-Service to manage any
+                      external workload—not just the ones the product supports out of the box. It lets an admin
+                      define: how to connect to a system, what "things"(resources) exist in it, and what
+                      actions can be run on those things—so the platform can automate them safely and
+                      repeatedly.
+                      <br />
+                      First of a kind GUI editor! No template for a “mix & match infra creator” existed so far
+                      in the market.
+                    </p>
+                  </section>
+
+                  <section class="case-study-subsection" id="my-role" aria-labelledby="my-role-label">
+                    <h3 id="my-role-label" class="case-study-subsection-title">MY ROLE</h3>
+                    <p>
+                      Sole designer for Custom Provider Builder - an extensibility workflow that lets Cloud Ops
+                      teams onboard any cloud provider and any workload (DB/storage/network) beyond native
+                      provider support. Owned end-to-end UX for a GUI mix-n-match entity builder— UX strategy →
+                      flows → interaction model → UI → validation → handoff
+                    </p>
+                  </section>
+
+                  <section class="case-study-subsection" id="impact" aria-labelledby="impact-label">
+                    <h3 id="impact-label" class="case-study-subsection-title">IMPACT</h3>
+                    <p>
+                      Reduced friction to extend Self-Service beyond built-in providers; positioned the product
+                      for broader TAM
+                    </p>
+                  </section>
+                </div>
+                <div class="solution-rotator">
+                  <img
+                    src="assets/custom-provider/Solution1.svg"
+                    alt="Custom Provider solution illustration (state 1)"
+                    class="solution-frame solution-frame-1"
+                  />
+                  <img
+                    src="assets/custom-provider/Solution2.svg"
+                    alt="Custom Provider solution illustration (state 2)"
+                    class="solution-frame solution-frame-2"
+                  />
+                </div>
+              </section>
+
+              <section class="case-study-section" id="design" aria-labelledby="design-label">
+                <h2 id="design-label" class="case-study-section-title">Design</h2>
+                <p class="design-intro">
+                  Considering I can’t get into the details of use-cases and designs due to an NDA, and since
+                  the designs covers multiple flows and is very extensive in nature, I'll be sharing a few
+                  screenshots and flows that capture the major UX problems that I've designed for and how
+                  certain aspects of the design evolved over time. Always up to dive more over coffee :)
+                </p>
+                <div class="design-subsections">
+                  <section class="case-study-subsection" id="ux-problems" aria-labelledby="ux-problems-label">
+                    <h3 id="ux-problems-label" class="case-study-subsection-title">UX PROBLEMS</h3>
+                    <div class="design-ux-list">
+                      <div class="design-ux-title">
+                        <strong>Created a scalable extensibility platform</strong>
+                      </div>
+                      <ul>
+                        <li>
+                          Designed a learnable mental model for a complex extensibility framework by
+                          introducing a Provider → Resource → Action → Task hierarchy with breadcrumbs for
+                          orientation and navigation.
+                        </li>
+                        <li>
+                          Made ‘programmable power’ usable. The builder turns code-like concepts into
+                          composable, stepwise decisions (auth → resources → actions → inputs/outputs → verify).
+                        </li>
+                      </ul>
+                      <div class="builder-rotator">
+                        <img
+                          src="assets/custom-provider/Builder1.png"
+                          alt="Builder flow screenshot 1"
+                          class="builder-frame builder-frame-1"
+                        />
+                        <img
+                          src="assets/custom-provider/Builder2.png"
+                          alt="Builder flow screenshot 2"
+                          class="builder-frame builder-frame-2"
+                        />
+                        <img
+                          src="assets/custom-provider/Builder3.png"
+                          alt="Builder flow screenshot 3"
+                          class="builder-frame builder-frame-3"
+                        />
+                      </div>
+                    </div>
+                    <div class="design-ux-list">
+                      <div class="design-ux-title">
+                        <strong>Progressive disclosure for novice users</strong>
+                      </div>
+                      <ul>
+                        <li>
+                          While pro users could easily learn and use the GUI builder, there were still a lot of
+                          users who would be new to the product, the feature, it’s concepts and terminologies.
+                        </li>
+                        <li>
+                          In testing with 6 Service Engineers, we found the power-user builder was cognitively
+                          heavy. So designed a separate first-time wizard flow so that users have a easier
+                          learning curve when they first sign into the mental model.
+                        </li>
+                      </ul>
+                      <div class="wizard-rotator">
+                        <img
+                          src="assets/custom-provider/Wizard1.png"
+                          alt="Wizard flow screenshot 1"
+                          class="wizard-frame wizard-frame-1"
+                        />
+                        <img
+                          src="assets/custom-provider/Wizard2.png"
+                          alt="Wizard flow screenshot 2"
+                          class="wizard-frame wizard-frame-2"
+                        />
+                        <img
+                          src="assets/custom-provider/Wizard3.png"
+                          alt="Wizard flow screenshot 3"
+                          class="wizard-frame wizard-frame-3"
+                        />
+                        <img
+                          src="assets/custom-provider/Wizard4.png"
+                          alt="Wizard flow screenshot 4"
+                          class="wizard-frame wizard-frame-4"
+                        />
+                      </div>
+                    </div>
+                    <div class="design-ux-list">
+                      <div class="design-ux-title">
+                        <strong>Onboarding</strong>
+                      </div>
+                      <ul>
+                        <li>Designed a dedicated interactive onboarding flow for the feature.</li>
+                        <li>
+                          Since the product was new and tech heavy, we decided to re-work the existing
+                          onboarding patterns being used in the product as we wanted a more interactive
+                          onboarding experience for the users.
+                        </li>
+                      </ul>
+                      <div class="onboarding-rotator">
+                        <img
+                          src="assets/custom-provider/Onb1.png"
+                          alt="Onboarding flow screenshot 1"
+                          class="onboarding-frame onboarding-frame-1"
+                        />
+                        <img
+                          src="assets/custom-provider/Onb2.png"
+                          alt="Onboarding flow screenshot 2"
+                          class="onboarding-frame onboarding-frame-2"
+                        />
+                        <img
+                          src="assets/custom-provider/Onb3.png"
+                          alt="Onboarding flow screenshot 3"
+                          class="onboarding-frame onboarding-frame-3"
+                        />
+                        <img
+                          src="assets/custom-provider/Onb4.png"
+                          alt="Onboarding flow screenshot 4"
+                          class="onboarding-frame onboarding-frame-4"
+                        />
+                        <img
+                          src="assets/custom-provider/Onb5.png"
+                          alt="Onboarding flow screenshot 5"
+                          class="onboarding-frame onboarding-frame-5"
+                        />
+                        <img
+                          src="assets/custom-provider/Onb6.png"
+                          alt="Onboarding flow screenshot 6"
+                          class="onboarding-frame onboarding-frame-6"
+                        />
+                        <img
+                          src="assets/custom-provider/Onb7.png"
+                          alt="Onboarding flow screenshot 7"
+                          class="onboarding-frame onboarding-frame-7"
+                        />
+                        <img
+                          src="assets/custom-provider/Onb8.png"
+                          alt="Onboarding flow screenshot 8"
+                          class="onboarding-frame onboarding-frame-8"
+                        />
+                        <img
+                          src="assets/custom-provider/Onb9.png"
+                          alt="Onboarding flow screenshot 9"
+                          class="onboarding-frame onboarding-frame-9"
+                        />
+                        <img
+                          src="assets/custom-provider/Onb10.png"
+                          alt="Onboarding flow screenshot 10"
+                          class="onboarding-frame onboarding-frame-10"
+                        />
+                        <img
+                          src="assets/custom-provider/Onb11.png"
+                          alt="Onboarding flow screenshot 11"
+                          class="onboarding-frame onboarding-frame-11"
+                        />
+                        <img
+                          src="assets/custom-provider/Onb12.png"
+                          alt="Onboarding flow screenshot 12"
+                          class="onboarding-frame onboarding-frame-12"
+                        />
+                        <img
+                          src="assets/custom-provider/Onb13.png"
+                          alt="Onboarding flow screenshot 13"
+                          class="onboarding-frame onboarding-frame-13"
+                        />
+                        <img
+                          src="assets/custom-provider/Onb14.png"
+                          alt="Onboarding flow screenshot 14"
+                          class="onboarding-frame onboarding-frame-14"
+                        />
+                        <img
+                          src="assets/custom-provider/Onb15.png"
+                          alt="Onboarding flow screenshot 15"
+                          class="onboarding-frame onboarding-frame-15"
+                        />
+                        <img
+                          src="assets/custom-provider/Onb16.png"
+                          alt="Onboarding flow screenshot 16"
+                          class="onboarding-frame onboarding-frame-16"
+                        />
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </section>
+
+              <section class="case-study-section" id="glossary" aria-labelledby="glossary-label">
+                <h2 id="glossary-label" class="case-study-section-title">Glossary</h2>
+                <p class="glossary-intro">For all further purposes, here is a small glossary</p>
+                <div class="glossary-grid">
+                  <div class="glossary-item">
+                    <div class="glossary-term">PROVIDER</div>
+                    <p class="glossary-definition">
+                      A connector that lets Self-Service talk to another system (AWS, databases, internal
+                      tools)
+                    </p>
+                  </div>
+                  <div class="glossary-item">
+                    <div class="glossary-term">RESOURCE</div>
+                    <p class="glossary-definition">
+                      A "thing" in that system you want to manage (bucket, database, VM)
+                    </p>
+                  </div>
+                  <div class="glossary-item">
+                    <div class="glossary-term">ACTION</div>
+                    <p class="glossary-definition">
+                      An operation you can perform on a resource (create, delete, resize, backup).
+                    </p>
+                  </div>
+                  <div class="glossary-item">
+                    <div class="glossary-term">AUTOMATION</div>
+                    <p class="glossary-definition">
+                      The scripted steps that execute an action reliably (API calls, scripts, runbooks).
+                    </p>
+                  </div>
+                  <div class="glossary-item">
+                    <div class="glossary-term">ORCHESTRATION</div>
+                    <p class="glossary-definition">
+                      Coordinating multiple actions in the right order across systems.
+                    </p>
+                  </div>
+                  <div class="glossary-item">
+                    <div class="glossary-term">BLUEPRINT</div>
+                    <p class="glossary-definition">
+                      A reusable recipe for provisioning something end-to-end (what to create + in what
+                      order).
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </main>
+
+          <aside class="case-study-right">
+            <nav class="case-study-toc" aria-label="On this page">
+              <div class="case-study-toc-mobile">
+                <label for="case-study-toc-select">On this page</label>
+                <select id="case-study-toc-select"></select>
+              </div>
+
+              <div class="case-study-toc-list">
+                <div class="toc-group">
+                  <a href="#context" class="toc-item" data-toc-id="context">CONTEXT</a>
+                  <div class="toc-sublist">
+                    <a href="#nutanix" class="toc-subitem" data-toc-id="nutanix">Nutanix</a>
+                    <a href="#self-service" class="toc-subitem" data-toc-id="self-service">Self Service</a>
+                    <a href="#the-gap" class="toc-subitem" data-toc-id="the-gap">The Gap</a>
+                    <a href="#business-problem" class="toc-subitem" data-toc-id="business-problem">Problems and Goals</a>
+                  </div>
+                </div>
+                <div class="toc-group">
+                  <a href="#the-solution" class="toc-item" data-toc-id="the-solution">THE SOLUTION</a>
+                  <div class="toc-sublist">
+                    <a href="#custom-provider" class="toc-subitem" data-toc-id="custom-provider">Custom Provider</a>
+                    <a href="#my-role" class="toc-subitem" data-toc-id="my-role">My Role</a>
+                    <a href="#impact" class="toc-subitem" data-toc-id="impact">Impact</a>
+                  </div>
+                </div>
+                <div class="toc-group">
+                  <a href="#design" class="toc-item" data-toc-id="design">DESIGN</a>
+                  <div class="toc-sublist">
+                    <a href="#ux-problems" class="toc-subitem" data-toc-id="ux-problems">UX Problems</a>
+                  </div>
+                </div>
+                <div class="toc-group">
+                  <a href="#glossary" class="toc-item" data-toc-id="glossary">GLOSSARY</a>
+                </div>
+              </div>
+            </nav>
+          </aside>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
